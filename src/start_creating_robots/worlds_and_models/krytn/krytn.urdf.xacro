@@ -18,15 +18,15 @@
     <link name="krytn_top">
         <visual name="visual">
             <geometry>
-                <mesh filename="file://$(find start_creating_robots)/worlds_and_models/krytn/meshes/krytn_v2-Body.dae"/>
+                <mesh filename="file://$(find start_creating_robots)/worlds_and_models/krytn/meshes/krytn_coffee_top.dae"/>
             </geometry>
         </visual>
     </link>
 
     <joint class="krytn_top_joint" type="fixed">
-        <parent link="base_footprint"/>
-        <child link="krytn_top"/>
-        <origin xyz="0.05 0 0.26" rpy="0 0 1.57"/>
+        <parent link="base_footprint" />
+        <child link="krytn_top" />
+        <origin xyz="0.05 0 0.26" rpy="0 0 1.57" />
     </joint>
 
     <!-- Gazebo specific plugins-->
