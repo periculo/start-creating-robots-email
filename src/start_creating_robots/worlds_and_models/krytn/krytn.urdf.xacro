@@ -23,7 +23,7 @@
         </visual>
     </link>
 
-    <joint class="krytn_top_joint" type="fixed">
+    <joint name="krytn_top_joint" type="fixed">
         <parent link="base_footprint" />
         <child link="krytn_top" />
         <origin xyz="0.05 0 0.26" rpy="0 0 1.57" />
