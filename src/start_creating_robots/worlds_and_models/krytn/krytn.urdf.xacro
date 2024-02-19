@@ -64,5 +64,14 @@
             <min_angular_velocity>-1</min_angular_velocity>
         </plugin>
 
+        <!-- Plugin to allow detachable joints. -->
+        <plugin filename="libignition-gazebo-detachable-joint-system.so" name="ignition::gazebo::systems::DetachableJoint">
+            <parent_link>base_footprint</parent_link>
+            <child_model>Coke</child_model>
+            <child_link>body</child_link>
+            <detach_topic>/coke/detach</detach_topic>
+            <attach_topic>/coke/attach</attach_topic>
+        </plugin>
+
     </gazebo>
 </robot>
